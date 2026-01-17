@@ -3,11 +3,12 @@ const mainContent = document.getElementById('mainContent');
 document.getElementById('aboutBtn').addEventListener('click', () => {
   mainContent.innerHTML = `
     <div class="about-text">
-      <p><b>Passionate Lady 💕</b><br/>
+      <p><b>Passionate Lady 💕</b>
+      <br/><br/>
 <i>Friendly Always....</i>
 <i>In naughty mood sometimes</i></p>
-<br/>
-<p>chat lover lady looking for friendly conversation.
+<br/><br/>
+<p>chat lover lady looking for friendly conversation.<br/>
 Let's have some beautiful talks and have some fun moments together</p>
     </div>
   `;
@@ -25,7 +26,8 @@ document.getElementById('galleryBtn').addEventListener('click', () => {
     'pic2.jpg',
     'pic3.jpg',
     'pic4.jpg',
-    'pic5.jpg', 'https://images.unsplash.com/photo-1532009324734-20a7a5813719?ixlib=rb-4.0.1&auto=format&fit=crop&w=800&q=80',
+    'pic5.jpg',
+    'https://images.unsplash.com/photo-1532009324734-20a7a5813719?ixlib=rb-4.0.1&auto=format&fit=crop&w=800&q=80',
   ];
   images.forEach(src => {
     const img = document.createElement('img');
