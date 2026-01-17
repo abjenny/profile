@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Feminine Profile Page</title>
+<!-- Link to external CSS -->
+<link rel="stylesheet" href="styles.css" />
+<!-- Include a nice font for the name -->
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<div class="header">
+  <div class="banner"></div>
+  <!-- Banner pic block below header -->
+  <div class="banner-block"></div>
+  <!-- Profile Pic with animated pink ring and pulse effect -->
+  <div class="profile-pic-container pulse" id="profileContainer" title="Click to animate">
+    <img src="profile.jpg" alt="Profile Picture" class="profile-pic" id="profilePic" />
+  </div>
+  <!-- Name with simple styling -->
+  <div class="name">🌸Jeŋŋყ🌸</div>
+</div>
+
+<div class="nav">
+  <button id="aboutBtn">About Me</button>
+  <button id="galleryBtn">Gallery</button>
+  <button id="friendsBtn">Friends</button>
+</div>
+
+<div class="content" id="mainContent">
+  <!-- Dynamic content will appear here -->
+  <p>Welcome! Click the buttons above to learn more about me.</p>
+</div>
+
+<!-- Chat message block below main content -->
+<div class="chat-message">
+  <p>To chat with me in PM with GIFS  and all features click on the chat button present on the bottom right corner of your screen. If it's not visible, maybe it's loading, just wait for a few seconds and it will appear.</p>
+  <p>Also Join my chatovod room to get this page link and receive updates about me and my friends. Chatovod room is for friendly chat only. For fun, join chatwee chat room.</p>
+</div>
+
+<!-- Button for chat room, below chat message, above bottom banner -->
+<button class="chat-room-btn" id="visitChatRoom">Visit Chatovod Room for Chat Only</button>
+
+<!-- Space for second banner pic block -->
+<div class="banner-space"></div>
+
+<!-- Modal for enlarged gallery image -->
+<div class="modal" id="imageModal">
+  <img src="" alt="Enlarged Image" id="modalImage" />
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
