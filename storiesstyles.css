@@ -1,0 +1,113 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Pacifico', cursive;
+  background: linear-gradient(135deg, #fbd3e9, #e0c3fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container styling */
+.container {
+  max-width: 800px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 30px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Title with animated glow effect */
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3em;
+  color: #ff69b4;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff1493;
+  animation: glow 1.5s infinite alternate;
+}
+
+/* Portrait picture with specified ratio and small rounded corners, with animation */
+.portrait {
+  width: 256px; /* 512 ratio scaled to width */
+  height: 400px; /* 800 ratio scaled to height */
+  max-width: 100%;
+  border-radius: 4px; /* Very small rounded corners */
+  border: 5px solid #ff69b4;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  margin: 20px auto;
+  object-fit: cover;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Make the image responsive if needed */
+@media(max-width: 600px) {
+  .portrait {
+    width: 150px; /* Adjust for smaller screens */
+    height: auto;
+  }
+}
+
+.portrait:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Description space without special font style */
+.description {
+  font-family: Arial, sans-serif;
+  font-size: 1.2em;
+  margin: 20px 0;
+  padding: 15px;
+  background: rgba(255,255,255,0.6);
+  border-radius: 20px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+  transition: background 0.3s;
+}
+
+/* Read story button styles */
+.read-btn {
+  padding: 15px 30px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.4em;
+  color: #fff;
+  background: linear-gradient(135deg, #ff69b4, #ff1493);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.read-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+/* Animations */
+@keyframes glow {
+  from { text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff1493; }
+  to { text-shadow: 0 0 20px #ff69b4, 0 0 30px #ff1493; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Style for the return button container */
+.return-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; /* space above the button */
+}
