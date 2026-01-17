@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Divya</title>
+  <link rel="stylesheet" href="aboutstyles.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <h1 class="title">Hello Everyone</h1>
+    <div class="subtitle">looking for sweet personalities who know how to chat</div>
+
+    <!-- Content section: stacked vertically -->
+    <div class="content-section">
+      
+      <!-- Buttons and popup -->
+      <div class="top-area">
+        <!-- Buttons stack -->
+        <div class="buttons-stack">
+          <button class="action-btn" onclick="showContent('dressing')">👗 DRESSING LIKES</button>
+          <button class="action-btn" onclick="showContent('hairstyles')">✨ Favorite Hairstyles</button>
+          <button class="action-btn" onclick="showContent('makeup')">💄 MAKEUP & STUFF</button>
+          <button class="action-btn" onclick="showContent('notint')">NOT INTO</button>
+        </div>
+        <!-- Popup -->
+        <div class="popup-box" id="popupArea">
+          <em>click on the above categories to view details</em>
+        </div>
+      </div>
+
+      <!-- Gallery below -->
+      <div class="gallery-section">
+        <div class="gallery-header">gallery📸</div>
+        <div class="underline-span"></div>
+        <div class="gallery">
+          <img src="https://i.postimg.cc/RV3XcShd/pic1.png" alt="Gallery Image 1" class="gallery-img" />
+          <img src="https://i.postimg.cc/s25L5VnL/pic2.gif" alt="Gallery Image 2" class="gallery-img" />
+          <img src="https://via.placeholder.com/400x500.png?text=Full+Body+1" alt="Full 1" class="full-img" />
+          <img src="https://via.placeholder.com/400x500.png?text=Full+Body+2" alt="Full 2" class="full-img" />
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Chat Button -->
+<script src="https://chatwee-api.com/v2/script/675866495342154a770a1f52.js"></script>
+
+<!-- Return Button -->
+<div class="return-button-container">
+  <a href="index.html" class="glass-button">Return To Profile Page</a>
+</div>
+
+  <script src="aboutscript.js"></script>
+</body>
+</html>
