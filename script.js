@@ -3,12 +3,11 @@ const mainContent = document.getElementById('mainContent');
 document.getElementById('aboutBtn').addEventListener('click', () => {
   mainContent.innerHTML = `
     <div class="about-text">
-      <h2>About Me</h2>
-      <p>Passionate Lady 💕
-Friendly Always....
-In naughty mood sometimes
-
-chat lover lady looking for friendly conversation.
+      <p><b>Passionate Lady 💕</b><br/>
+<i>Friendly Always....</i>
+<i>In naughty mood sometimes</i></p>
+<br/>
+<p>chat lover lady looking for friendly conversation.
 Let's have some beautiful talks and have some fun moments together</p>
     </div>
   `;
