@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Maintenance Notice</title>
+<!-- Google Fonts for a beautiful bold font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+<style>
+  /* Reset default styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Body styling with background gradient and centered content */
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  /* Container for the message */
+  .container {
+    text-align: center;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    animation: fadeInUp 1s ease-out;
+  }
+
+  /* Heading style with animation */
+  h1 {
+    font-size: 2.5em;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+    animation: pulse 2s infinite;
+  }
+
+  /* Paragraph style */
+  p {
+    font-size: 1.2em;
+    color: #555;
+  }
+
+  /* Keyframes for fadeInUp animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Keyframes for pulse animation */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Website Under Maintenance</h1>
+    <p>We are working hard to bring you back very soon. Stay tuned!</p>
+  </div>
+</body>
+</html>
